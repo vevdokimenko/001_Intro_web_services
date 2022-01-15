@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<planes>
+    <plane id="1">
+        <origin>USA</origin>
+        <model>Boeing 737</model>
+        <chars>
+            <type>passenger</type>
+            <seats>2</seats>
+            <specs>
+                <load_capacity>20</load_capacity>
+                <passengers>189</passengers>
+            </specs>
+        </chars>
+        <parameters>
+            <length>39.5</length>
+            <width>34.3</width>
+            <height>12.5</height>
+        </parameters>
+        <price currency="USD">128000</price>
+    </plane>
+
+    <plane id="2">
+        <origin>Ukraine</origin>
+        <model>AN 225</model>
+        <chars>
+            <type>cargo</type>
+            <seats>2</seats>
+            <specs>
+                <load_capacity>60</load_capacity>
+                <passengers>20</passengers>
+            </specs>
+        </chars>
+        <parameters>
+            <length>40.7</length>
+            <width>35.9</width>
+            <height>14.0</height>
+        </parameters>
+        <price currency="USD">137000</price>
+    </plane>
+</planes>
