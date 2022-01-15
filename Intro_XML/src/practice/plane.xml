@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<planes>
+<planes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="plane.xsd">
     <plane id="1">
         <origin>USA</origin>
         <model>Boeing 737</model>
@@ -37,5 +38,24 @@
             <height>14.0</height>
         </parameters>
         <price currency="USD">137000</price>
+    </plane>
+
+    <plane>
+        <origin>USA</origin>
+        <model>Boeing 343</model>
+        <chars>
+            <type>mail</type>
+            <seats>4</seats>
+            <specs>
+                <load_capacity>40</load_capacity>
+                <passengers>10</passengers>
+            </specs>
+        </chars>
+        <parameters>
+            <length>40.7</length>
+            <width>35.7</width>
+            <height>14.3</height>
+        </parameters>
+        <price>145000</price>
     </plane>
 </planes>

@@ -5,18 +5,12 @@
     <xs:sequence>
       <xs:element name="load_capacity">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="20"/>
-            <xs:enumeration value="60"/>
-          </xs:restriction>
+          <xs:restriction base="xs:int"></xs:restriction>
         </xs:simpleType>
       </xs:element>
       <xs:element name="passengers">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="189"/>
-            <xs:enumeration value="20"/>
-          </xs:restriction>
+          <xs:restriction base="xs:int"></xs:restriction>
         </xs:simpleType>
       </xs:element>
     </xs:sequence>
@@ -28,6 +22,9 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="passenger"/>
             <xs:enumeration value="cargo"/>
+            <xs:enumeration value="mail"/>
+            <xs:enumeration value="fireman"/>
+            <xs:enumeration value="agricultural"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -39,26 +36,17 @@
     <xs:sequence>
       <xs:element name="length">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="39.5"/>
-            <xs:enumeration value="40.7"/>
-          </xs:restriction>
+          <xs:restriction base="xs:double"></xs:restriction>
         </xs:simpleType>
       </xs:element>
       <xs:element name="width">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="34.3"/>
-            <xs:enumeration value="35.9"/>
-          </xs:restriction>
+          <xs:restriction base="xs:double"></xs:restriction>
         </xs:simpleType>
       </xs:element>
       <xs:element name="height">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="12.5"/>
-            <xs:enumeration value="14.0"/>
-          </xs:restriction>
+          <xs:restriction base="xs:double"></xs:restriction>
         </xs:simpleType>
       </xs:element>
     </xs:sequence>
@@ -74,25 +62,19 @@
     <xs:sequence>
       <xs:element name="origin">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="USA"/>
-            <xs:enumeration value="Ukraine"/>
-          </xs:restriction>
+          <xs:restriction base="xs:string"></xs:restriction>
         </xs:simpleType>
       </xs:element>
       <xs:element name="model">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:enumeration value="Boeing 737"/>
-            <xs:enumeration value="AN 225"/>
-          </xs:restriction>
+          <xs:restriction base="xs:string"></xs:restriction>
         </xs:simpleType>
       </xs:element>
       <xs:element type="charsType" name="chars"/>
       <xs:element type="parametersType" name="parameters"/>
       <xs:element type="priceType" name="price"/>
     </xs:sequence>
-    <xs:attribute type="xs:string" name="id" use="optional"/>
+    <xs:attribute type="xs:int" name="id" use="optional"/>
   </xs:complexType>
   <xs:complexType name="planesType">
     <xs:sequence>
